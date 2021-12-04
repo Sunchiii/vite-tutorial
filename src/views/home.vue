@@ -1,10 +1,22 @@
 <template>
    <div class="align">
-       <h1>hello home</h1>
+       <Banner />
     </div> 
 </template>
 
-<script>
+<script lang="ts">
+import {defineComponent} from 'vue'
+import Banner from '../components/Home/Herobanner.vue'
+
+export default defineComponent({
+    setup(){
+        return { }
+    },
+    components:{
+        Banner
+    }
+
+})
 </script>
 
 <style>
